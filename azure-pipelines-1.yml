@@ -5,7 +5,7 @@ stages:
   - stage: build
     displayName: Build Stage
     pool: 
-      name: default
+      name: Default
     jobs:
       -  job: maven
          displayName: Build using maven
