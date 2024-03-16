@@ -7,7 +7,7 @@ stages:
     pool: 
       name: Default
       demands:
-        - maven
+        - Maven
         - Agent.Version -gtVersion 3.236.1
 
 
