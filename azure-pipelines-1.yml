@@ -1,0 +1,16 @@
+---
+trigger:
+  - main
+stages:
+  - stage: build
+    displayName: Build Stage
+    pool: 
+      name: Default
+    jobs:
+      -  job: maven
+         displayName: Build using maven
+         steps:
+           - task: Maven@4
+             inputs:
+               mavenPomFile: 'pom.xml' 
+               goals: package
