@@ -1,0 +1,13 @@
+trigger:
+- main
+
+pool:
+  name: NameOfYourSelfHostedAgentPool  # Replace with the name of your self-hosted agent pool
+
+steps:
+- script: echo "Hello, Azure DevOps!"
+  displayName: 'Print Message'
+
+- script: echo "This job is running on a self-hosted agent"
+  displayName: 'Display Agent Info'
+
