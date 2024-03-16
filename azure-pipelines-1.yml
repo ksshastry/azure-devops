@@ -6,6 +6,10 @@ stages:
     displayName: Build Stage
     pool: 
       name: Default
+      demands:
+        - Agent.Version -gtVersion 2.163.1
+
+
     jobs:
       -  job: maven
          displayName: Build using maven
